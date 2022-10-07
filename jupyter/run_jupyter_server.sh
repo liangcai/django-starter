@@ -1,0 +1,1 @@
+python mysite/manage.py shell_plus --lab
