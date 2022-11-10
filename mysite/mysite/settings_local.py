@@ -1,5 +1,6 @@
-from .settings import *
 import os
+
+from .settings import *
 
 # place to the settings dir override default settings for dev
 
@@ -39,3 +40,8 @@ SHELL_PLUS_PRINT_SQL = True
 # EMAIL_USE_TLS = True
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+
+# allows you to execute tasks locally in a synchronous manner, instead of sending them to the queue. This is useful for running unit tests or executing the application in your local environment without running Celery
+
+CELERY_TASK_ALWAYS_EAGER = True

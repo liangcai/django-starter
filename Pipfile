@@ -5,9 +5,6 @@ name = "tencent"
 
 [packages]
 django = "4"
-django-reversion = "*"
-pillow = "*"
-django-allauth = "*"
 
 [dev-packages]
 django-extensions = "*"
@@ -17,6 +14,7 @@ black = "*"
 flake8 = "*"
 flake8-django = "*"
 djlint = "*"
+isort = "*"
 
 [requires]
 python_version = "3"
